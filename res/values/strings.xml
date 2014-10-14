@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RandomNumbers</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Random">Random</string>
+    <string name="Rango">Indique el rango:</string>
+    <string name="Tamano">Cuantos números quieres:</string>
+
+</resources>
