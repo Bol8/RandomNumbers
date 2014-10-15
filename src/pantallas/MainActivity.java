@@ -2,6 +2,7 @@ package pantallas;
 
 import codigo.RandomNumber;
 import codigo.RangoException;
+import codigo.RangoMenorTamañoException;
 import codigo.TamañoException;
 
 import com.example.randomnumbers.R;
@@ -54,6 +55,12 @@ public class MainActivity extends ActionBarActivity {
 					.show();
 
 		} catch (TamañoException e) {
+			String texto = e.getMessage();
+			Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_SHORT)
+					.show();
+
+		} catch (RangoMenorTamañoException e) {
+
 			String texto = e.getMessage();
 			Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_SHORT)
 					.show();

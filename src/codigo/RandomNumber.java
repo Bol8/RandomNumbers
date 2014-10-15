@@ -9,7 +9,7 @@ public class RandomNumber {
 	private int lista[];
 
 	public RandomNumber(int rango, int tamaño) throws RangoException,
-			TamañoException {
+			TamañoException, RangoMenorTamañoException {
 
 		this.setRango(rango);
 		this.setTamaño(tamaño);
@@ -56,9 +56,13 @@ public class RandomNumber {
 			return true;
 	}
 
-	private void generarAleatorios() {
+	private void generarAleatorios() throws RangoMenorTamañoException {
 		Random rand = new Random();
 		int aleatorio;
+		
+		if(rango < lista.length) {
+			throw new RangoMenorTamañoException("El rango debe ser mayor que el total de números");
+		}else {
 
 		for (int i = 0; i < lista.length; i++) {
 			aleatorio = rand.nextInt(rango) + 1;
@@ -71,7 +75,7 @@ public class RandomNumber {
 		}
 
 		Arrays.sort(lista);
-
+		}
 	}
 
 	private boolean comprobarAleatorios(int aleatorio) {
