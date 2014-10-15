@@ -42,8 +42,8 @@ public class RandomNumber {
 
 	private boolean validarTamaño(int tam) throws TamañoException {
 
-		if (tam < 1 || tam > 21) {
-			throw new TamañoException("El número máximo permitido son 20");
+		if (tam < 1 || tam > 20) {
+			throw new TamañoException("Debe de estar entre 1 y 20");
 		} else
 
 			return true;
