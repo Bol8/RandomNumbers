@@ -7,5 +7,7 @@
     <string name="Random">Random</string>
     <string name="Rango">Indique el rango:</string>
     <string name="Tamano">Cuantos números quieres:</string>
+    <string name="Ordenar">Ordenados</string>
+    <string name="Desordenar">Desordenados</string>
 
 </resources>

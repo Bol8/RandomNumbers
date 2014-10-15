@@ -46,14 +46,45 @@
         android:inputType="number"
         android:textColor="#000000" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <RadioGroup
+            android:id="@+id/gruporb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Ordenar"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/radioButton1"
+                android:layout_alignParentRight="true"
+                android:text="@string/Desordenar"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="48dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.02"
         android:background="#696969"
+        android:gravity="center"
         android:textColor="#000000"
         android:textSize="40sp" />
 
@@ -62,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:gravity="center"
         android:onClick="generaNumeros"
         android:text="@string/Random" />
 
